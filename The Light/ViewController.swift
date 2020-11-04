@@ -10,7 +10,9 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var colorName: UILabel!
     var isLightOn = 0
-    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         UpdateUI()
@@ -20,6 +22,7 @@ class ViewController: UIViewController {
     fileprivate func UpdateUI() {
         switch isLightOn {
         case 0:
+            colorName.textColor = .black
             colorName.text = "White"
             view.backgroundColor = .white
             isLightOn += 1
@@ -51,8 +54,14 @@ class ViewController: UIViewController {
             view.backgroundColor = .magenta
             colorName.text = "Magenta"
             isLightOn += 1
+        case 8:
+            view.backgroundColor = .black
+            colorName.text = "Black"
+            colorName.textColor = .white
+            isLightOn += 1
         default:
             isLightOn = 0
+            
         }
     }
     
