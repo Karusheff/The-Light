@@ -13,6 +13,8 @@
 		47740E5F2552D18600F68C49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47740E5D2552D18600F68C49 /* Main.storyboard */; };
 		47740E612552D18700F68C49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47740E602552D18700F68C49 /* Assets.xcassets */; };
 		47740E642552D18700F68C49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47740E622552D18700F68C49 /* LaunchScreen.storyboard */; };
+		47CACCA725545048005A287C /* Screenshot02.png in Resources */ = {isa = PBXBuildFile; fileRef = 47CACCA525545048005A287C /* Screenshot02.png */; };
+		47CACCA825545048005A287C /* Screenshot01.png in Resources */ = {isa = PBXBuildFile; fileRef = 47CACCA625545048005A287C /* Screenshot01.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		47740E602552D18700F68C49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47740E632552D18700F68C49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47740E652552D18700F68C49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47CACCA525545048005A287C /* Screenshot02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot02.png; sourceTree = "<group>"; };
+		47CACCA625545048005A287C /* Screenshot01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot01.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		47740E562552D18600F68C49 /* The Light */ = {
 			isa = PBXGroup;
 			children = (
+				47CACCAA2554505E005A287C /* Screenshots */,
 				47740E572552D18600F68C49 /* AppDelegate.swift */,
 				47740E592552D18600F68C49 /* SceneDelegate.swift */,
 				47740E5B2552D18600F68C49 /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				47740E652552D18700F68C49 /* Info.plist */,
 			);
 			path = "The Light";
+			sourceTree = "<group>";
+		};
+		47CACCAA2554505E005A287C /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				47CACCA525545048005A287C /* Screenshot02.png */,
+				47CACCA625545048005A287C /* Screenshot01.png */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +141,8 @@
 				47740E642552D18700F68C49 /* LaunchScreen.storyboard in Resources */,
 				47740E612552D18700F68C49 /* Assets.xcassets in Resources */,
 				47740E5F2552D18600F68C49 /* Main.storyboard in Resources */,
+				47CACCA825545048005A287C /* Screenshot01.png in Resources */,
+				47CACCA725545048005A287C /* Screenshot02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
