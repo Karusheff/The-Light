@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,18 +12,32 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Light" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dru-xm-u9M">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <connections>
                                     <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="VEx-bZ-JNK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCy-p5-SHT">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCy-p5-SHT">
+                                <rect key="frame" x="149.66666666666666" y="338.66666666666669" width="114.99999999999997" height="59"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lzt-XE-zfz">
+                                <rect key="frame" x="183" y="457" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchCondition:" destination="BYZ-38-t0r" eventType="valueChanged" id="qOe-hj-ztu"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Off" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKk-aZ-k3x">
+                                <rect key="frame" x="195" y="520" width="24" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -31,23 +45,22 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dru-xm-u9M" secondAttribute="trailing" id="8Nf-mH-gBu"/>
-                            <constraint firstItem="dru-xm-u9M" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="BoY-ZQ-Dly"/>
-                            <constraint firstItem="LCy-p5-SHT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HY2-Yh-g98"/>
-                            <constraint firstItem="dru-xm-u9M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PSA-b1-SAk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LCy-p5-SHT" secondAttribute="trailing" id="cKf-xa-jfH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LCy-p5-SHT" secondAttribute="bottom" id="odA-Sb-oUW"/>
-                            <constraint firstItem="dru-xm-u9M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uu5-xM-ofy"/>
-                            <constraint firstItem="LCy-p5-SHT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="v1x-FW-c8O"/>
+                            <constraint firstItem="dru-xm-u9M" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1bx-ix-pNB"/>
+                            <constraint firstItem="dru-xm-u9M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1oM-mm-MTb"/>
+                            <constraint firstItem="LCy-p5-SHT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3nM-zD-5sB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dru-xm-u9M" secondAttribute="bottom" id="6Lw-x0-FNl"/>
+                            <constraint firstItem="LCy-p5-SHT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TfX-BL-uVJ"/>
+                            <constraint firstItem="dru-xm-u9M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="j5r-2X-nYy"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="colorName" destination="LCy-p5-SHT" id="RzO-2V-ZDl"/>
+                        <outlet property="conditionLabel" destination="cKk-aZ-k3x" id="KOh-c3-1S2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="528.98550724637687" y="102.45535714285714"/>
+            <point key="canvasLocation" x="528.98550724637687" y="101.90217391304348"/>
         </scene>
     </scenes>
 </document>
